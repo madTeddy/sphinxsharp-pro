@@ -1,0 +1,2 @@
+recursive-include sphinxsharp-pro/locales *
+recursive-include sphinxsharp-pro/_static *
