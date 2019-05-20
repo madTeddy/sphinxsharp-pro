@@ -10,7 +10,7 @@ setup(
   name = 'sphinxsharp-pro',
   packages = ['sphinxsharp-pro'],
   include_package_data=True,
-  version = '1.0.0',
+  version = '1.0.1',
   license='MIT',
   description = 'CSharp (C#) domain for sphinx.',
   long_description=long_description,
