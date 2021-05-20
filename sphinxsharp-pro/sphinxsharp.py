@@ -4,7 +4,7 @@
 
     Sphinxsharp Pro (with custom styling)
 
-    :copyright: Copyright 2019 by MadTeddy
+    :copyright: Copyright 2021 by MadTeddy
 """
 
 import re
@@ -897,16 +897,16 @@ def setup(app):
     package_dir = path.abspath(path.dirname(__file__))
 
     app.add_domain(CSharpDomain)
-    app.add_stylesheet('sphinxsharp.css')
+    app.add_css_file('sphinxsharp.css')
     override_file = path.join(app.confdir, '_static/sphinxsharp-override.css')
     if path.exists(override_file):
-        app.add_stylesheet('sphinxsharp-override.css')
+        app.add_css_file('sphinxsharp-override.css')
     CSNodes.add_nodes(app)
 
     locale_dir = path.join(package_dir, 'locales')
     app.add_message_catalog('sphinxsharp', locale_dir)
     return {
-        'version': '1.0.1',
+        'version': '1.0.2',
         'parallel_read_safe': True,
         'parallel_write_safe': True,
     }
